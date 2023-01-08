@@ -15,6 +15,7 @@ import './App.css';
 import ExerciseDetail from './pages/ExerciseDetail';
 import Home from './pages/Home';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer'
 
 
 //Below inside of the return, 
@@ -36,11 +37,12 @@ import Navbar from './components/Navbar';
 const App = () => {
   return (
     <Box width="400px">
-      Navbar
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="/exercise/:id" element={<ExerciseDetail />} />
       </Routes>
+      <Footer />
       </Box>
   )
 }
