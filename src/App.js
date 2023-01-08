@@ -34,9 +34,14 @@ import Footer from './components/Footer'
 //   such as a <br> or <hr>, or to render a
 //    custom component that does not have
 //     any children
+
+// adding 'sx' to after box width, this ensures 
+//that the website is responsive
+
+
 const App = () => {
   return (
-    <Box width="400px">
+    <Box width="400px" sx={{width: { xl: '1488px'} }}>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />}/>
