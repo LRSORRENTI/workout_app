@@ -12,9 +12,32 @@ import { Box } from '@mui/material'
 
 import './App.css';
 
+
+//Below inside of the return, 
+//the first route will be for our home component 
+//that will be created soon
+//the second route with the path = /exercise/:id
+//will be for dynamically rendered content, and it will 
+// be a self closing component
+
+// Self-closing components are useful 
+// when you need to render a simple 
+// component that does not have any 
+// internal state or logic, and does 
+// not need to hold any children. They
+//  can be used to represent simple HTML elements,
+//   such as a <br> or <hr>, or to render a
+//    custom component that does not have
+//     any children
 const App = () => {
   return (
-    <Box>App</Box>
+    <Box width="400px">
+      Navbar
+      <Routes>
+        <Route path="/" element={<Home />}/>
+        <Route path="/exercise/:id" element={<ExerciseDetail />} />
+      </Routes>
+      </Box>
   )
 }
 
