@@ -36,15 +36,16 @@ import Footer from './components/Footer'
 //     any children
 
 // adding 'sx' to after box width, this ensures 
-//that the website is responsive
+//that the website is responsive, as well as m='auto'
+//mui allows us to add auto margin to this box component
 
 
 const App = () => {
   return (
-    <Box width="400px" sx={{width: { xl: '1488px'} }}>
+    <Box width="400px" sx={{width: { xl: '1488px'}}} m='auto'>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />}/>
+        <Route path="/" element={<Home />} />
         <Route path="/exercise/:id" element={<ExerciseDetail />} />
       </Routes>
       <Footer />
