@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
-import {BrowswerRouter } from 'react-router-dom'
+import {BrowserRouter } from 'react-router-dom'
 
 // In React, the BrowserRouter 
 // component is a part of the react-router-dom 
@@ -25,7 +25,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'))
 
 
 root.render(
-    <BrowswerRouter>
+    <BrowserRouter>
     <App />
-    </BrowswerRouter>
+    </BrowserRouter>
 )
