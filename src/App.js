@@ -12,6 +12,10 @@ import { Box } from '@mui/material'
 
 import './App.css';
 
+import ExerciseDetail from './pages/ExerciseDetail';
+import Home from './pages/Home';
+import Navbar from './components/Navbar';
+
 
 //Below inside of the return, 
 //the first route will be for our home component 
