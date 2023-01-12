@@ -20,9 +20,16 @@ import { Stack } from '@mui/material';
 //and the stack from mui kit, these will help 
 //build visually appealing components quickly
 
+
+import Logo from '../assets/images/Logo.png';
+
 const Navbar = () => {
   return (
-    <div>Navbar</div>
+    <Stack>
+      <Link to="/">
+      <img src={Logo}/>
+      </Link>
+    </Stack>
   )
 }
 
